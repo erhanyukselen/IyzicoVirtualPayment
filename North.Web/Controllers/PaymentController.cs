@@ -47,8 +47,8 @@ namespace North.Web.Controllers
             var total = 0m;
             foreach (var item in model.Carts)
             {
-                var found = _productRepo.Get(x => x.ProductId == item.ProductId)
-                    .Include(x => x.Category)
+                var found = _productRepo.Get(x=>x.ProductId == item.ProductId)
+                    .Include(x=>x.Category)
                     .FirstOrDefault();
                 if (found is { Discontinued: false }) //if(found != null && !found.Discontinued)
                 {
@@ -58,12 +58,12 @@ namespace North.Web.Controllers
                         Category1 = found.Category?.CategoryName,
                         Id = found.ProductId.ToString(),
                         ItemType = "PHYSICAL",  //"VIRTUAL" "PHYSICAL",
-                        Price = (found.UnitPrice * item.Count)?.ToString(new CultureInfo("en-us")),
+                        Price =  (found.UnitPrice*item.Count)?.ToString(new CultureInfo("en-us")),
                     });
                     total += found.UnitPrice.GetValueOrDefault() * item.Count;
                 }
             }
-
+            
             var paymentModel = new PaymentModel()
             {
                 CardModel = model.CardModel,

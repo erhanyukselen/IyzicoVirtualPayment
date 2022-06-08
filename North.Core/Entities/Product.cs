@@ -3,8 +3,13 @@ using System.Collections.Generic;
 
 namespace North.Core.Entities
 {
-    public partial class AlphabeticalListOfProduct
+    public partial class Product
     {
+        public Product()
+        {
+            OrderDetails = new HashSet<OrderDetail>();
+        }
+
         public int ProductId { get; set; }
         public string ProductName { get; set; } = null!;
         public int? SupplierId { get; set; }
@@ -15,6 +20,9 @@ namespace North.Core.Entities
         public short? UnitsOnOrder { get; set; }
         public short? ReorderLevel { get; set; }
         public bool Discontinued { get; set; }
-        public string CategoryName { get; set; } = null!;
+
+        public virtual Category? Category { get; set; }
+        public virtual Supplier? Supplier { get; set; }
+        public virtual ICollection<OrderDetail> OrderDetails { get; set; }
     }
 }

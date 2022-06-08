@@ -1,4 +1,4 @@
-﻿namespace North.Web.Models
+namespace North.Web.Models
 {
     public class ErrorViewModel
     {

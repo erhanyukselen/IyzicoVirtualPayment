@@ -29,7 +29,7 @@ namespace North.Businesss.Repositories.Abstracts.EntityFrameworkCore
         {
             _table.Add(entity);
             if (!isSaveLater)
-                return this.Save();
+               return this.Save();
             return 0;
         }
 

@@ -5,11 +5,16 @@ VisualStudioVersion = 17.1.32228.430
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "North.Businesss", "IyzicoVirtualPayment\North.Businesss.csproj", "{8ECB5432-71AB-4EE5-8C78-FE9FAE0AE6E9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "North.Core", "North.Core\North.Core.csproj", "{FF6D8DD2-F61E-4296-9987-09A0A87CCA7F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "North.Core", "North.Core\North.Core.csproj", "{FF6D8DD2-F61E-4296-9987-09A0A87CCA7F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "North.Data", "North.Data\North.Data.csproj", "{13645B10-8C14-46FC-B2A1-DD5C519D4A56}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "North.Data", "North.Data\North.Data.csproj", "{13645B10-8C14-46FC-B2A1-DD5C519D4A56}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "North.Web", "North.Web\North.Web.csproj", "{FBE8E481-502B-4AC2-83F1-02DF2FB24128}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "North.Web", "North.Web\North.Web.csproj", "{FBE8E481-502B-4AC2-83F1-02DF2FB24128}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "NorthScript", "NorthScript", "{D08A644E-AAB3-45D3-8D59-2E5E5C550287}"
+	ProjectSection(SolutionItems) = preProject
+		NorthScript.sql = NorthScript.sql
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
